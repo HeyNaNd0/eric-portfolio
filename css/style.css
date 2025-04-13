@@ -1,0 +1,152 @@
+/* ====== Base Reset & Fonts ====== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+    color: #1a1a1a;
+}
+
+/* ====== Layout ====== */
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main {
+    padding: 40px 0;
+}
+
+/* ====== Hero Section ====== */
+.hero {
+    background: linear-gradient(to right, #002f6c, #005baa);
+    color: white;
+    padding: 60px 20px 40px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin: 0 0 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e0f7ff;
+}
+
+/* ====== Sections ====== */
+.section {
+    padding: 40px 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    margin: 20px auto;
+    padding: 30px;
+    text-align: left;
+}
+
+/* ====== Skills Grid ====== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skills-grid li {
+    background: #e6f0ff;
+    border-radius: 6px;
+    padding: 12px;
+    text-align: center;
+    font-weight: 600;
+    color: #003366;
+}
+
+/* ====== Buttons ====== */
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.resume-button {
+    background: #0078D4;
+}
+
+.resume-button:hover {
+    background: #005a9e;
+    transform: scale(1.05);
+}
+
+.button:hover {
+    background: #002244;
+}
+
+/* ====== Footer ====== */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #ddd;
+    font-size: 0.9em;
+}
+
+/* ====== Animations ====== */
+.fade-in {
+    animation: fadeInUp 0.8s ease-in both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
