@@ -110,6 +110,23 @@ nav a:hover {
     background: #002244;
 }
 
+/* ====== Resume Request Link ====== */
+.resume-request {
+    font-weight: bold;
+    color: #008cff;
+    margin-left: 15px;
+    padding: 0.5rem 1rem;
+    border: 2px solid #008cff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.resume-request:hover {
+    background-color: #008cff;
+    color: #ffffff;
+}
+
 /* ====== Footer ====== */
 footer {
     text-align: center;
