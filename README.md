@@ -24,7 +24,7 @@ This wasn’t just a “build a site” project — this was my full dive into:
 - Fully responsive, mobile-first layout
 - Professional resume (available on request 🔒)
 - Skills, experience, and project showcase
-- Blog section that pulls from [my Medium](https://medium.com/@nandocodes)
+- Blog section that pulls from [my Medium](https://medium.com/@0H_b0yy)
 - Auto-deploys on push using GitHub Actions
 
 ---
