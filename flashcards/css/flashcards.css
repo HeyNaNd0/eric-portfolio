@@ -27,7 +27,7 @@ body{
     min-height: 150px;
     display: flex;
     justify-content: center;
-    align-tracks: center;
+    align-items: center;
 }
 
 .controls button {
