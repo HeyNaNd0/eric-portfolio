@@ -39,7 +39,7 @@ body{
     background-color: #0078d4;
     color: white;
     cursor: pointer;
-    transition: backgrounf 0.2s ease;
+    transition: background 0.2s ease;
 }
 
 .controls button:hover{
