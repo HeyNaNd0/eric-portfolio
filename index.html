@@ -21,108 +21,121 @@
   <link rel="shortcut icon" href="images/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
   <link rel="manifest" href="images/favicon/site.webmanifest" />
-
 </head>
 
 <body>
-  <header class="hero">
-    <div class="container">
-      <h1>Eric Fernandez</h1>
-      <p>Cloud Support Engineer • AKS Expert • Kubernetes Guru</p>
+  <div class="app-container">
+    <aside class="sidebar">
+      <!-- Profile Image -->
+      <img src="images/me.png" alt="Eric Fernandez" class="profile-pic" />
+  
+      <!-- Name -->
+      <h2>Eric</h2>
+  
+      <!-- Navigation -->
       <nav>
-        <a href="#bio">Bio</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
+        <a href="#" data-section="bio">Bio</a>
+        <a href="#" data-section="experience">Experience</a>
+        <a href="#" data-section="skills">Skills</a>
+        <a href="#" data-section="projects">Projects</a>
+        <a href="#" data-section="blog">Blog</a>
+        <a href="#" data-section="contact">Contact</a>
       </nav>
+  
+      <!-- Dark Mode Toggle -->
+      <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+    </aside>
+  
 
-      <!-- Darkmode button -->
-       <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+    <main class="content-area">
+      <section id="bio" class="content-section active">
+        <h2>About Me</h2>
+        <p>
+          I'm a results-driven Cloud Support Engineer with over 8 years of experience optimizing cloud infrastructure and supporting key business objectives through a blend of technical expertise and strategic project management.
+        </p>
+        <p>
+          I specialize in diagnosing and resolving complex system issues, implementing industry best practices, and enhancing operational efficiency. Known for my leadership and collaborative approach, I thrive in fast-paced, client-focused environments—working seamlessly across teams to troubleshoot, optimize, and secure cloud-based applications.
+        </p>
+        <h3>💪 Key Strengths:</h3>
+        <ul>
+          <li>Cloud Technologies</li>
+          <li>Troubleshooting</li>
+          <li>Project Management</li>
+          <li>Leadership</li>
+          <li>Client Relations</li>
+          <li>Communication</li>
+          <li>Documentation</li>
+          <li>Performance Monitoring</li>
+          <li>Compliance</li>
+        </ul>
+        <h3>🏆 Career Highlights:</h3>
+        <ul>
+          <li>B.S. in Information Technology – University of Central Florida</li>
+          <li>A.A. in Liberal Arts – State College of Florida</li>
+          <li>Successfully managed 500+ client interactions monthly</li>
+          <li>Spearheaded Kubernetes cluster optimization through cross-functional collaboration</li>
+          <li>Consistently earned high satisfaction ratings by resolving critical system issues</li>
+        </ul>
+        <p><strong>Let's connect!</strong> Reach me at <a href="mailto:eric@nandocodes.dev">eric@nandocodes.dev</a></p>
+      </section>
 
-    </div>
-  </header>
+      <section id="experience" class="content-section">
+        <h2>Experience</h2>
+        <ul>
+          <li><strong>Microsoft – AKS Escalation Engineer</strong> (2022–Present)<br />Zero-downtime upgrades, RBAC, autoscaling, and cluster migration across Azure Kubernetes Service.</li>
+          <li><strong>Google – Technical Solutions Engineer</strong> (2021–2022)<br />Automated GKE operations, improved monitoring pipelines, and enhanced cloud-native toolchains.</li>
+          <li><strong>Facebook – Enterprise Support Tech</strong> (2020–2021)<br />Resolved high-volume support cases for internal IT, managed O365 and global networking issues.</li>
+          <li><strong>Google – Site Reliability Engineer</strong> (2018–2020)<br />Optimized infrastructure performance, implemented redundancy and deployment automation.</li>
+        </ul>
+      </section>
 
-  <main>
-    <section id="bio" class="section card fade-in">
-      <h2>About Me</h2>
-      <p>Cloud Support Engineer with 8+ years in tech. Expert in Kubernetes, Azure AKS, and GKE. Worked at Microsoft,
-        Google, and Facebook optimizing infrastructure at scale.</p>
-    </section>
+      <section id="skills" class="content-section">
+        <h2>Skills</h2>
+        <ul class="skills-grid">
+          <li>Azure AKS</li>
+          <li>Kubernetes</li>
+          <li>GKE</li>
+          <li>Python</li>
+          <li>VMware</li>
+          <li>SQL / Oracle</li>
+          <li>Compliance</li>
+          <li>Monitoring</li>
+          <li>Linux</li>
+          <li>Network Design</li>
+        </ul>
+      </section>
 
-    <section id="experience" class="section card fade-in">
-      <h2>Experience</h2>
-      <ul>
-        <li><strong>Microsoft – AKS Escalation Engineer</strong> (2022–Present)<br />Zero-downtime upgrades, RBAC,
-          autoscaling, cluster migration.</li>
-        <li><strong>Google – Technical Solutions Engineer</strong> (2021–2022)<br />GKE automation, cluster
-          architecture, monitoring optimization.</li>
-        <li><strong>Facebook – Enterprise Support Tech</strong> (2020–2021)<br />Network ops, remote infra
-          troubleshooting, O365 cloud setup.</li>
-        <li><strong>Google – Site Reliability Engineer</strong> (2018–2020)<br />Performance tuning, redundancy
-          strategy, deployment scripting.</li>
-      </ul>
-    </section>
+      <section id="projects" class="content-section">
+        <h2>Projects</h2>
+        <p>Coming soon: AKS case studies, infra rebuilds, automated deployments.</p>
+      </section>
 
-    <section id="skills" class="section card fade-in">
-      <h2>Skills</h2>
-      <ul class="skills-grid">
-        <li>Azure AKS</li>
-        <li>Kubernetes</li>
-        <li>GKE</li>
-        <li>Python</li>
-        <li>VMware</li>
-        <li>SQL / Oracle</li>
-        <li>Compliance</li>
-        <li>Monitoring</li>
-        <li>Linux</li>
-        <li>Network Design</li>
-      </ul>
-    </section>
+      <section id="blog" class="content-section">
+        <h2>📚 Latest Post</h2>
+        <h3>From Code to Cloud...</h3>
+        <p>I built and deployed my personal dev site using Azure Static Web Apps and learned a ton about domain setup, SSL certs, GitHub CI/CD, and DNS.</p>
+        <a class="button" href="https://medium.com/@0H_b0yy" target="_blank">📖 Read on Medium</a>
+      </section>
 
-    <section id="projects" class="section card fade-in">
-      <h2>Projects</h2>
-      <p>Coming soon: Real-world AKS case studies, infra rebuilds, automated deployments.</p>
-    </section>
+      <section id="contact" class="content-section">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> <a href="mailto:eric@nandocodes.dev">eric@nandocodes.dev</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/heyfern" target="_blank">linkedin.com/in/heyfern</a></p>
 
-    <section id="blog" class="section card fade-in">
-      <h2>📚 Latest Post</h2>
-      <h3>From Code to Cloud: How I Deployed My Dev Portfolio on Azure (and What I Learned)</h3>
-      <p>
-        I built and deployed my personal dev site using Azure Static Web Apps and learned a ton about domain setup, SSL certs, GitHub CI/CD, and DNS. This post breaks down the whole journey — the wins, roadblocks, and everything in between.
-      </p>
-      <a class="button" href="https://medium.com/@0H_b0yy/from-code-to-cloud-how-i-deployed-my-dev-portfolio-on-azure-and-what-i-learned-e49ad5c689fd" target="_blank">
-        📖 Read Full Post on Medium
-      </a>
-    </section>
-
-    <section id="contact" class="section card fade-in">
-      <h2>Contact</h2>
-      <p><strong>Email:</strong> <a href="mailto:eric@nandocodes.dev">eric@nandocodes.dev</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/heyfern" target="_blank">linkedin.com/in/heyfern</a></p>
-      <form action="https://formspree.io/f/xeogoqyk" method="POST" class="resume-request-form">
-        <h3>📩 Request My Resume</h3>
-        <label>
-          Your name:
-          <input type="text" name="name" required>
-        </label>
-        <label>
-          Your email:
-          <input type="email" name="_replyto" required>
-        </label>
-        <label>
-          Reason (optional):
-          <textarea name="message" placeholder="Why do you want the resume?"></textarea>
-        </label>
-        <button type="submit" class="button resume-button">Send Request</button>
-      </form>
-    </section>
-  </main>
+        <form id="resumeForm" action="https://formspree.io/f/YOUR-ID" method="POST" class="resume-request-form">
+          <h3>📩 Request My Resume</h3>
+          <label>Your name:<input type="text" name="name" required></label>
+          <label>Your email:<input type="email" name="_replyto" required></label>
+          <label>Reason:<textarea name="message"></textarea></label>
+          <button type="submit" class="button resume-button">Send Request</button>
+        </form>
+        <div id="formSuccess" style="display:none;">✅ Request sent!</div>
+      </section>
+    </main>
+  </div>
 
   <footer>
     <p>&copy; 2025 Eric Fernandez</p>
   </footer>
 </body>
-
 </html>

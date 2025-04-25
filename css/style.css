@@ -1,276 +1,256 @@
-/* ====== Base Reset & Fonts ====== */
+/* ===== Reset & Fonts ===== */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #f0f2f5;
-    color: #1a1a1a;
-    line-height: 1.7;
-  }
-  
-  /* ====== Layout ====== */
-  .container {
-    width: 92%;
-    max-width: 880px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  main {
-    padding: 60px 0;
-  }
-  
-  /* ====== Hero Section ====== */
-  .hero {
-    background: linear-gradient(to right, #002f6c, #005baa);
-    color: white;
-    padding: 70px 20px 50px;
-  }
-  
-  .hero h1 {
-    font-size: 2.6rem;
-    font-weight: 800;
-    margin: 0 0 10px;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
-  
-  nav {
-    margin-top: 20px;
-  }
-  
-  nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 16px;
-    font-weight: 600;
-    position: relative;
-    display: inline-block;
-  }
-  
-  nav a::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: #ffffff;
-    transition: width 0.3s;
-  }
-  
-  nav a:hover::after {
-    width: 100%;
-  }
-  
-  /* ====== Sections ====== */
-  .section {
-    padding: 60px 20px;
-  }
-  
-  .card {
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
-    margin: 30px auto;
-    padding: 40px;
-    text-align: left;
-  }
-  
-  /* ====== Skills Grid ====== */
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 15px;
-    margin-top: 20px;
-  }
-  
-  .skills-grid li {
-    background: #e6f0ff;
-    border-radius: 6px;
-    padding: 12px;
-    text-align: center;
-    font-weight: 600;
-    color: #003366;
-    list-style: none;
-  }
-  
-  /* ====== Buttons ====== */
-  .button {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 12px 24px;
-    background: #003366;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: background 0.3s ease, transform 0.2s ease;
-  }
-  
-  .resume-button {
-    background: #0078D4;
-  }
-  
-  .resume-button:hover {
-    background: #005a9e;
-    transform: scale(1.05);
-  }
-  
-  .button:hover {
-    background: #002244;
-  }
-  
-  /* ====== Resume Form ====== */
-  .resume-request-form {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f9fbfd;
-    border: 1px solid #d9e2ec;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-  }
-  
-  .resume-request-form h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    color: #003366;
-  }
-  
-  .resume-request-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: 600;
-  }
-  
-  .resume-request-form input,
-  .resume-request-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-  }
-  
-  .resume-request-form textarea {
-    resize: vertical;
-    min-height: 80px;
-  }
-  
-  #formSuccess {
-    text-align: center;
-    margin-top: 20px;
-    font-weight: bold;
-    color: green;
-    font-size: 1.1rem;
-  }
-  
-  /* ====== Footer ====== */
-  footer {
-    text-align: center;
-    padding: 30px 0;
-    background: #f0f0f0;
-    font-size: 0.9em;
-    color: #555;
-  }
-  
-  /* ====== Animations ====== */
-  .fade-in {
-    animation: fadeInUp 0.8s ease-in both;
-  }
-  
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* ====== Responsive ====== */
-  @media (max-width: 600px) {
-    nav a {
-      display: block;
-      margin: 10px 0;
-    }
-  
-    .card {
-      padding: 20px;
-    }
-  
-    .hero h1 {
-      font-size: 2rem;
-    }
-  }
-  
-  /* ====== Dark Mode Toggle Button ====== */
-  #darkModeToggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 999;
-    background: #ffffffcc;
-    color: #1a1a1a;
-    border: none;
-    border-radius: 8px;
-    padding: 8px 12px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  #darkModeToggle:hover {
-    background: #e2e8f0;
-  }
-  
-  /* ====== Dark Mode ====== */
-  body.dark-mode {
-    background-color: #121212;
-    color: #f5f5f5;
-  }
-  
-  body.dark-mode .card,
-  body.dark-mode .resume-request-form {
-    background-color: #1e1e1e;
-    color: #f5f5f5;
-  }
-  
-  body.dark-mode a {
-    color: #90cdf4;
-  }
-  
-  body.dark-mode nav a:hover {
-    color: #dce3ec;
-  }
-  
-  body.dark-mode .button,
-  body.dark-mode .resume-request {
-    background-color: #2d3748;
-    color: #f5f5f5;
-    border: 1px solid #90cdf4;
-  }
-  
-  body.dark-mode .button:hover,
-  body.dark-mode .resume-request:hover {
-    background-color: #4a5568;
-  }
-  
-  body.dark-mode #darkModeToggle {
-    background: #2d3748;
-    color: #f5f5f5;
-  }
-  
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ===== Layout ===== */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 240px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #2c2c2c;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+
+.sidebar h2 {
+  font-size: 1.8rem;
+  margin: 0 0 30px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sidebar nav a {
+  text-decoration: none;
+  margin: 8px 0;
+  display: block;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+/* ===== Main Content ===== */
+.content-area {
+  flex: 1;
+  padding: 60px;
+  overflow-y: auto;
+}
+
+.content-section {
+  display: none;
+}
+
+.content-section.active {
+  display: block;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+/* ===== Skills Grid ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.skills-grid li {
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  list-style: none;
+}
+
+/* ===== Buttons ===== */
+.button {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+  transition: background 0.3s;
+  border: none;
+}
+
+/* ===== Resume Form ===== */
+.resume-request-form {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.resume-request-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.resume-request-form input,
+.resume-request-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.resume-request-form textarea {
+  resize: vertical;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+/* ===== Dark Mode ===== */
+body.dark-mode {
+  background-color: #111111;
+  color: #f0f0f0;
+}
+
+body.dark-mode .content-area {
+  background-color: #111111;
+  color: #f0f0f0;
+}
+
+body.dark-mode .sidebar {
+  background: #2c2c2c;
+  color: #f0f0f0;
+}
+
+body.dark-mode .sidebar nav a {
+  color: #f0f0f0;
+}
+
+body.dark-mode .sidebar nav a:hover {
+  color: #ff7e29;
+}
+
+body.dark-mode .skills-grid li {
+  background: #2c2c2c;
+  color: #f0f0f0;
+}
+
+body.dark-mode .resume-request-form {
+  background: #2c2c2c;
+  color: #f0f0f0;
+}
+
+body.dark-mode .resume-request-form input,
+body.dark-mode .resume-request-form textarea {
+  background: #1e1e1e;
+  color: #f0f0f0;
+  border: 1px solid #444;
+}
+
+body.dark-mode footer {
+  background: #2c2c2c;
+  color: #f0f0f0;
+}
+
+body.dark-mode .button {
+  background: #ff7e29;
+  color: #ffffff;
+}
+
+body.dark-mode .button:hover {
+  background: #ff944d;
+}
+
+body.dark-mode #darkModeToggle {
+  background: #ff7e29;
+  color: #ffffff;
+}
+
+/* ===== Light Mode ===== */
+body.light-mode {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+body.light-mode .content-area {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+body.light-mode .sidebar {
+  background: #ff7e29;
+  color: #ffffff;
+}
+
+body.light-mode .sidebar nav a {
+  color: #ffffff;
+}
+
+body.light-mode .sidebar nav a:hover {
+  color: #1a1a1a;
+}
+
+body.light-mode .skills-grid li {
+  background: #e6e6e6;
+  color: #1a1a1a;
+}
+
+body.light-mode .resume-request-form {
+  background: #f9f9f9;
+  color: #1a1a1a;
+}
+
+body.light-mode .resume-request-form input,
+body.light-mode .resume-request-form textarea {
+  background: #ffffff;
+  color: #1a1a1a;
+  border: 1px solid #ccc;
+}
+
+body.light-mode footer {
+  background: #f0f0f0;
+  color: #1a1a1a;
+}
+
+body.light-mode .button {
+  background: #ff7e29;
+  color: #ffffff;
+}
+
+body.light-mode .button:hover {
+  background: #ff944d;
+}
+
+body.light-mode #darkModeToggle {
+  background: #ff7e29;
+  color: #ffffff;
+}
