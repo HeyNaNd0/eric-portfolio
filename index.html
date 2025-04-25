@@ -101,9 +101,22 @@
       <h2>Contact</h2>
       <p><strong>Email:</strong> <a href="mailto:eric@nandocodes.dev">eric@nandocodes.dev</a></p>
       <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/heyfern" target="_blank">linkedin.com/in/heyfern</a></p>
-      <a href="#contact" class="resume-request">
-        📩 Request Resume
-      </a>
+      <form action="https://formspree.io/f/xeogoqyk" method="POST" class="resume-request-form">
+        <h3>📩 Request My Resume</h3>
+        <label>
+          Your name:
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Your email:
+          <input type="email" name="_replyto" required>
+        </label>
+        <label>
+          Reason (optional):
+          <textarea name="message" placeholder="Why do you want the resume?"></textarea>
+        </label>
+        <button type="submit" class="button resume-button">Send Request</button>
+      </form>
     </section>
   </main>
 
